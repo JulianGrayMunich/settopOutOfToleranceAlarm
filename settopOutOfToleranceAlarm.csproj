@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EASendMail" Version="7.9.2.1" />
+    <PackageReference Include="EPPlus" Version="7.1.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.0-preview.4.24266.19" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+    <PackageReference Include="System.Xml.Linq" Version="3.5.21022.801" />
+    <PackageReference Include="Twilio" Version="7.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="databaseAPI">
+      <HintPath>..\..\DBapi\databaseAPI\bin\Release\net6.0\databaseAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="GNAgeneraltools">
+      <HintPath>..\..\GNAgeneraltools\GNAgeneraltools\bin\Release\net6.0\GNAgeneraltools.dll</HintPath>
+    </Reference>
+    <Reference Include="GNAspreadsheettools">
+      <HintPath>..\..\GNAspreadsheettools\GNAspreadsheettools\bin\Release\net6.0\GNAspreadsheettools.dll</HintPath>
+    </Reference>
+    <Reference Include="GNAsurveycalcs">
+      <HintPath>..\..\GNAsurveytools\GNAsurvey\bin\Release\net6.0\GNAsurveycalcs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
